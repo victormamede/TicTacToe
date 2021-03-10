@@ -23,3 +23,12 @@ int string_to_int(char *str)
 
 	return result;
 }
+
+void play(char *board, char symbol)
+{
+	int input[2];
+
+	get_input(input);
+
+	board[input[0] * 3 + input[1]] = symbol;
+}
